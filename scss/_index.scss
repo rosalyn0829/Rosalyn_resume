@@ -1,6 +1,6 @@
-:root{
-    // scroll-behavoir:auto;
-}
+:root {
+    scroll-behavior: auto;
+  }
 /*=============================================
 =                  General                    =
 =============================================*/
@@ -25,9 +25,24 @@ button:focus {
 
 .navbar {
     box-shadow: 0 3px 20px rgba(0, 0, 0, .11);
+    cursor:hand;
 }
 .carousel-indicators{
     border-radius: 50%;
+}
+.navline::after,
+#menu .navbar-brand::after {
+  content: "";
+  display: block;
+  height: 2px;
+  width: 0%;
+  background: white;
+  margin: 5px 0;
+  transition: 0.5s width ease;
+}
+.navline.active::after,
+#menu .navbar-brand.active::after {
+  width: 100%;
 }
 /*=============================================
 =                  Header                     =
@@ -109,11 +124,6 @@ top: 0;
 =                  Features                   =
 =============================================*/
 
-
-
-/*=============================================
-=                  Reviews                    =
-=============================================*/
 
 /*=============================================
 =                  Gallery                    =
@@ -293,6 +303,7 @@ top: 0;
 =                   Footer                    =
 =============================================*/
 
+
 footer ul {
     list-style: none;
     padding: 0;
@@ -304,16 +315,6 @@ footer ul {
     margin: 0;
 }
 
-#goBackBtn {
-    width: 40px;
-    height: 40px;
-    border:none;
-    position: fixed;
-    bottom: 15px;
-    right: 15px;
-    z-index: 1000;
-    border-radius: 50%;
-}
 
 /*=============================================
 =                   AD-BOX                    =
@@ -450,4 +451,19 @@ footer ul {
     font-family: "Poppins", sans-serif;
 
   }
+
+
+    /*--------------------------------------------------------------
+  #goBackBtn
+  --------------------------------------------------------------*/
+  #goBackBtn {
+    width: 40px;
+    height: 40px;
+    border:none;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    z-index: 1000;
+    border-radius: 50%;
+}
  
