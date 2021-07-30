@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Rosalyn World</title>
+    <link rel="icon shortcut" href="./img/favicon.ico">
+    <!-- Bootstrap官方網站 https://getbootstrap.com/ -->
+    <!-- 連結Bootstrap.min.css -->
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <!--客製化Bootstrap CSS  將sass資料夾丟到專案資料夾 vscode外掛程式sass翻譯成css 任何動作都要在watching...情況下在variables.scss才能做更改 但不能增加 需要增加要回到自己的style.css-->
+    <!-- <link rel="stylesheet" href="./scss/bootstrap.css"> -->
+    <link rel="stylesheet" href="./scss2/all.css">
+    <!-- 使用font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <!-- 使用style.css -->
+    <!-- <link rel="stylesheet" href="./css/style.css"> -->
+    <!-- Live sass compiler 是將scss 翻譯成css的東西 scss是一群工程師開發的有參雜迴圈較有效率但非主流有參雜迴圈較有效率html不支援 但還有一種語言真的叫做sass -->
+</head>
+
+<body>
+    <!-- navbar -->
+    <!-- 使用Boostrap Navbar -->
+    <!-- TODO: 點擊滾動目標 -->
+
+    <nav class="navbar navbar-expand-sm navbar-light bg-danger fixed-top">
+        <a class="navbar-brand" href="#">Rosalyn</a>
+        <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId"
+            aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#featuresSection">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#introSection">Collections</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#gallerySection">contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- navbar end -->
+    <!-- header -->
+    <header id="header" class="jumbotron text-center text-white bg-dark">
+        <div class="container">
+            <h1>Rosalyn's World</h1>
+            <p>We focus on providing the project management &amp; data storage solutions.</p>
+        </div>
+    </header>
+    <!-- header end -->
+
+    <!-- featuresSection -->
+    <section id="featuresSection" class="py-5 bg-danger text-white">
+        <div class="container">
+            <!-- container是為了一個留白 如果沒有設定container他會網頁多大就塞多大滿版 -->
+            <h1 class="section-title mb-5 text-center">Portfolio</h1>
+            <!-- TODO: 設定row內的區塊置中對齊 -->
+            <div class="row justify-content-center">
+                <div class="col-sm-10 col-md-8">
+                    <!-- TODO: 為article1 article2 設置collapse互動方式 -->
+                    <button class="btn btn-primary">Education</button>
+                    <button class="btn btn-primary">Skill</button>
+                    <!-- 有圖片的簡歷 -->
+                    <article class="my-3" id="article0">
+                        <h3>Base Information</h3>
+                        <!-- div要用row才能水平排列 -->
+                        <div class="row justify-center">
+                            <div class="col-sm-2 col-4">
+                                <!-- 圖片圓形 -->
+                                <img class="w-100 rounded-circle" src="./img/個人照.jpg" alt="">
+                            </div>
+                            <div class="col-sm-6">
+                                <p>Name : Hsieh,Chia-Hsuan
+                                    <br>English Name : Rosalyn
+                                    <br>Age : 23
+                                    <br>Date of Birth : August 29/1997
+                                    <br>Nationality : Taiwan
+                                </p>
+                            </div>
+                        </div>
+
+                    </article>
+                    <article class="my-3" id="article1">
+                        <h3>Education</h3>
+                        <p>2015-2019 Chung Yuan Christian University</p>
+                        <ul>
+                            <li>Department of Landscape Architecture</li>
+                            <li>Minor in Department of Finance</li>
+                        </ul>
+                        <p>2012-2015 National Overseas Chinese Senior High School</p>
+                        <ul>
+                            <li> General</li>
+                        </ul>
+                    </article>
+                    <article class="my-3" id="article2">
+                        <h3>Work experience</h3>
+                        <p>Feb 2020-Jul 2020 National Cram School </p>
+                        <ul>
+                            <li>Web Design Assistant</li>
+                        </ul>
+                        <p>Oct 2019- Dec 2019 New Classic Consultant CO., LTD. </p>
+                        <ul>
+                            <li> Landscape Architecture Designer</li>
+                        </ul>
+
+                    </article>
+                    <article class="my-3" id="article3">
+                        <h3>Social Experience</h3>
+                        <p>2018 The Department of Landscape Architecture General Affairs
+                        <p>
+                        <p>2017 The Night of Landscape Architecture Dance Teacher</p>
+                        <p>2014-2016 Dancing Club Teaching and Dancing Reseacher</p>
+                    </article>
+                    <!-- 導覽按鈕 -->
+                    <nav class="nav nav-pills">
+                        <a class="nav-link active" href="#article3">Social Experience</a>
+                        <a class="nav-link" href="#article4">Philosophy</a>
+                    </nav>
+                    <!-- TODO: 為article3 article4 設置tab互動方式 -->
+                    <div>
+                        <article id="article4" class="my-3">
+                            <h3>Skill and Ability</h3>
+                            <p>Drawing Software : Adobe Photoshop,Illustrator
+                                <br>3D Software : Autocad,Sketch up
+                                <br>Web Language: Html,Css
+                                <br>Computer skill : Word,Excel,Powerpoint
+                                <br>Language skill : TOEIC 710
+                            </p>
+                        </article>
+                        <!-- <article id="article4" class="my-3">
+                            <h3>Philosophy</h3>
+                            <p>We always keep our bussiness and products simple. So it will always be easy to learn and
+                                use. Our
+                                goal is making it simple but effective. Even though it might be the first time to use
+                                that kinds
+                                of product, we'll try to make sure every steps will be clear to understand for you. If
+                                needs
+                                any helps, our technical support team will be always standing by.
+                            </p>
+                        </article> -->
+                    </div>
+                    <!-- TODO: 崁入一個youtube影片 https://www.youtube.com/watch?v=gwDoRPcPxtc -->
+                    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/e-qY_UEOWD4" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- featuresSection end -->
+    <!-- introSection -->
+    <!-- TODO: 設定introSection 上下padding為5倍 -->
+    <!-- padding -top=pt padding-bottom=pb 以此類推 pt-3 pb-3= py-3 (y為數學代表的上下) -->
+    <section id="introSection" class="py-5">
+        <h1 class="section-title text-center text-danger mb-5">Collections</h1>
+        <div class="container">
+            <!-- TODO: 修正排版為三項排一排 -->
+            <!-- 把div用row包起來 -->
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <!-- 文字化圖示 -->
+                            <!-- <i class="fas fa-cannabis fa-5x"></i> -->
+                            <!-- 建立超連結至檔案 -->
+                            <a href="./作品集/景觀設計作品集與簡歷.pdf"> <i class="fas fa-cannabis fa-5x text-danger"></i></a>
+                            <!-- <i class="fas fa-paper-plane fa-5x" aria-hidden="true"></i> -->
+                        </div>
+                        <!-- <h3 class="text-secondary">Landscape Design</h3> -->
+                        <!-- style="text-decoration-line: none 去除超連結底線 -->
+                        <a href="./作品集/景觀設計作品集與簡歷.pdf" style="text-decoration-line: none;">
+                            <h3 class="text-danger">Landscape Design</h3>
+                        </a>
+                        <div class="intro-line bg-danger"></div>
+                        <p>My works during school.</p>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <!-- 文字畫圖示 -->
+                            <!-- <i class="fas fa-paint-brush fa-5x"></i> -->
+                            <!-- <i class="fas fa-briefcase fa-5x" aria-hidden="true"></i> -->
+                            <a href="./作品集/平面作品集與簡歷.pdf"><i class="fas fa-paint-brush fa-5x text-danger"></i></a>
+                        </div>
+                        <!-- <h3 class="text-secondary">Graphic Design</h3> -->
+                        <a href="作品集/平面作品集與簡歷.pdf" style="text-decoration-line: none;">
+                            <h3 class="text-secondary text-danger">Graphic Design</h3>
+                        </a>
+                        <div class="intro-line bg-danger"></div>
+                        <p>Everythings is setup ready, just waiting for your order.</p>
+                    </div>
+                </div>
+                <!-- <div class="col-md-4">
+                    <div class="intro-box">
+                        <div class="icon text-primary py-3">
+                            <i class="fas fa-gem fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <h3 class="text-secondary">Sticker Design</h3>
+                        <div class="intro-line bg-primary"></div>
+                        <p>Our software &amp; hardware service is always standby.</p>
+                    </div>
+                </div> -->
+            </div>
+            <!--  設定此區塊距離上方5倍margin -->
+            <!-- 留白通常還是要自己設定 在bootstrap margin-top=mt margin-bottom=mb margin-left=ml -->
+            <!--  修正排版在md時六個排一排 sm三個排一排 sm (col-6)以下兩個排一排-->
+            <!-- col-md 大size col-sm中size col手機小size -->
+            <!-- <div class="row mt-5"> -->
+            <!-- ctrl+d可以將一樣的文字一起做修改 選完後按左右鑑會有很多游標一起移動 -->
+            <!-- <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-tree fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Cozy Office</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-coffee fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Free coffee bar</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-id-card fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Profesional Team</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-language fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Linguist</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-rocket fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Hackers Spirit</h5>
+                </div>
+                <div class="col-md-2 col-sm-4 col-6 text-center">
+                    <i class="fas fa-graduation-cap fa-2x text-secondary" aria-hidden="true"></i>
+                    <h5 class="mt-3 text-secondary">Self-Learning</h5>
+                </div> -->
+        </div>
+        </div>
+    </section>
+    <!-- introSection end -->
+    <!-- 圖片輪播 -->
+    <!-- b4-元件-default -->
+    <!-- b4-Carouselid-default -->
+    <div id="imageCarousel" class="carousel slide" data-ride="carousel">
+        <!-- 頁碼提示 -->
+        <ol class="carousel-indicators">
+            <li data-target="#imageCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#imageCarousel" data-slide-to="1"></li>
+            <li data-target="#imageCarousel" data-slide-to="2"></li>
+
+        </ol>
+        <!-- 頁面容器 -->
+        <div class="carousel-inner" role="listbox">
+            <!-- page1 -->
+            <!-- 輪播只能一個active active的意思是重新預覽的第一個畫面 每張圖篇的比例大小要一樣 -->
+            <div class="carousel-item active">
+                <img src="./img/輪播照片2.png" alt="" class="w-100">
+            </div>
+            <!-- Page2 -->
+            <div class="carousel-item">
+                <img src="./img/輪播照片3.png" alt="" class="w-100">
+            </div>
+            <!-- page3 -->
+            <div class="carousel-item">
+                <img src="./img/輪播照片.png" alt="" class="w-100">
+            </div>
+
+        </div>
+        <!-- 上一頁 -->
+        <a class="carousel-control-prev" href="#imageCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <!-- 下一頁 -->
+        <a class="carousel-control-next" href="#imageCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    <!-- 圖片輪播 end -->
+    <!-- reviewsSection -->
+
+    <section id="modalSection" class="bg-danger py-5">
+        <div class="container">
+            <div class="row justify-content-center my-5">
+                <div class="col-md-3">
+                    <h4 class="text-center text-white mb-4">New Version Released!</h4>
+                    <!-- TODO: 設定點擊按鈕後顯示彈出式視窗 -->
+                    <button class="btn btn-lg btn-block btn-primary">Open Modal!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- TODO: 加入彈出式視窗 Modal -->
+    <!-- modalSection end -->
+    <!-- gallerySection -->
+    <section id="gallerySection">
+        <!-- container-fluid滿版的意思 -->
+        <div class="container-fluid">
+            <div class="row">
+                <div id="galleryImage1" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo1</div>
+                </div>
+                <div id="galleryImage2" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo2</div>
+                </div>
+                <div id="galleryImage3" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo3</div>
+                </div>
+                <div id="galleryImage4" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo4</div>
+                </div>
+                <div id="galleryImage5" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo5</div>
+                </div>
+                <div id="galleryImage6" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo6</div>
+                </div>
+                <div id="galleryImage7" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo7</div>
+                </div>
+                <div id="galleryImage8" class="col-md-3 col-sm-6 gallery-block">
+                    <div class="gallery-text">Photo8</div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- gallerySection end -->
+    <!-- footer -->
+    <footer id="footer" class="pt-5 bg-danger text-white ">
+        <div class="container">
+            <div class="row justify-center">
+                <h4 class=" col-sm-12 text-center">Contact</h4>
+                <!-- <a href="mailto:service@brand.com">service@brand.com</a> -->
+
+            </div>
+            <p class="pb-5 text-center">Email:r860829@gmail.com <br>Phone:0935961657</p>
+
+    </footer>
+    <!-- footer end -->
+    <!-- ad-box -->
+    <div class="ad-box">
+        <div class="left-part">
+            <button class="ad-toggle-btn">
+                <i class="fas fa-sort"></i>
+            </button>
+        </div>
+        <div class="right-part">
+            <img class="w-100" src="./img/header-image.jpg">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores numquam ullam excepturi facilis aperiam.
+                Maiores mollitia nihil vitae ullam dolore?</p>
+        </div>
+    </div>
+    <!-- ad-box end -->
+    <button id="goBackBtn" class="bg-primary">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- jquery.min.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- popper.min.js -->
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <!-- bootstrap.min.js -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+        crossorigin="anonymous"></script>
+    <!-- 連結網頁主程式 -->
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
