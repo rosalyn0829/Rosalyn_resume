@@ -1,3 +1,6 @@
+:root{
+    // scroll-behavoir:auto;
+}
 /*=============================================
 =                  General                    =
 =============================================*/
@@ -180,7 +183,8 @@ top: 0;
 /* 放入背景圖片 */
 
 #galleryImage1 {
-    background-image: url('../img/web-泰山飯店網站.JPG');
+    // background-image: url('../img/web-泰山飯店網站.JPG');
+    background-image: url('../img/web-相本集.JPG');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
